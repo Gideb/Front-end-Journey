@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 4</title>
+    <link rel="stylesheet" href="Account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side">
+            <figure>
+                <img src="logo.png" alt="logo">
+            </figure>
+
+            <h2>Create account</h2>
+
+            <div class="navigation">
+
+                <div class="nav">
+                    <i class="fa-solid fa-1"></i>
+                    <h3>Personal Details</h3>
+                </div>
+                <div class="line"></div>
+
+                <div class="nav">
+                    <i class="fa-solid fa-2"></i>
+                    <h3>Account Details</h3>
+                </div>
+                <div class="line"></div>
+
+                <div class="nav">
+                    <i class="fa-solid fa-3"></i>
+                    <h3>Tax Details</h3>
+                </div>
+                <div class="line"></div>
+
+                <div class="nav">
+                    <i class="fa-solid fa-4"></i>
+                    <h3>Summary</h3>
+                </div>
+                <div class="line"></div>
+
+                <div class="nav">
+                    <i class="fa-solid fa-5"></i>
+                    <h3>Receipt</h3>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="right-side">
+
+            <form action="">
+                <legend>YOUR PERSONAL DETAILS</legend>
+
+                <fieldset>
+                    <legend>
+                        National Identification Number/ID Number
+                    </legend>
+                    <input type="number" id="id-number" minlength="11" maxlength="11" required>
+                </fieldset>
+
+                <p>This should be 11 digits long</p>
+
+
+                <input type="text" id="firstName" placeholder="First Name" required autofill>
+
+                <input type="text" id="lastName" placeholder="Last Name" required autofill>
+            </form>
+
+            <form action="">
+                <legend>YOUR RESIDENTIAL ADDRESS</legend>
+                <input type="text" id="streetAddress1" required placeholder="Street Address">
+
+                <input type="text" id="streetAddress2" placeholder="Street Address (optional)">
+
+                <br>
+
+                <input type="number" id="postCode" placeholder="Post Code">
+
+                <input type="text" id="city" placeholder="City">
+
+                <!-- <input list="someCountries" placeholder="Country" id="countrys">
+                <datalist id="someCountries">
+                    <option value="Australia">
+                    <option value="Canada">
+                    <option value="China">
+                    <option value="France">
+                    <option value="Germany">
+                    <option value="Ghana">
+                    <option value="India">
+                    <option value="Japan">
+                    <option value="South Africa">
+                    <option value="United Kingdom">
+                    <option value="United States of America">
+                </datalist> -->
+
+                <input list="countries" id="countryInput" placeholder="Country">
+                <datalist id="countries"></datalist>
+
+            </form>
+
+            <form action="">
+                <legend>CONTACT DETAILS</legend>
+
+                <select id="countryCode"></select>
+
+                <input type="tel" id="phone" placeholder="Your Phone Number"> <br>
+
+                <input type="email" id="email" placeholder="Your Email Address">
+            </form>
+
+            <hr>
+
+            <button type="button">Next</button>
+
+            <script>
+
+                // Fetch the list of countries from the REST Countries API
+                // Fetch the list of countries from the REST Countries API
+                fetch('https://restcountries.com/v3.1/all')
+                    .then(response => response.json())
+                    .then(data => {
+                        const datalist = document.getElementById('countries');
+
+                        // Sort the countries alphabetically by their common name
+                        data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+
+                        // Populate the datalist with sorted countries
+                        data.forEach(country => {
+                            const option = document.createElement('option');
+                            option.value = country.name.common; // Use the country's common name
+                            datalist.appendChild(option);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching countries:', error));
+
+
+                // Fetch the list of countries and their calling codes
+                fetch('https://restcountries.com/v3.1/all')
+                    .then(response => response.json())
+                    .then(data => {
+                        const countryCodeSelect = document.getElementById('countryCode');
+
+                        // Sort countries alphabetically by their common name
+                        data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+
+                        // Populate the dropdown with country codes, flags, and initials
+                        data.forEach(country => {
+                            if (country.idd && country.idd.root) {
+                                const option = document.createElement('option');
+                                const callingCode = country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : '');
+                                const countryInitials = country.cca2; // Get the country initials (e.g., "US")
+
+                                // Use the flag image
+                                const flag = country.flags.svg; // URL to the flag image
+                                option.value = callingCode;
+                                option.innerHTML = `<img src="${flag}" alt="${countryInitials}" style="width: 20px; height: 15px; margin-right: 5px;"> ${countryInitials} (${callingCode})`;
+                                countryCodeSelect.appendChild(option);
+                            }
+                        });
+                    })
+                    .catch(error => console.error('Error fetching country codes:', error));
+
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>

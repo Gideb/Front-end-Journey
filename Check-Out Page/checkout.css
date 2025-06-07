@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    background-color: #ffe7c7;
+    margin: 20px 400px;
+    padding: 30px ;
+    border-radius: 40px;
+    box-shadow: 3px 5px 15px gray;
+    transform:translate(5px, 3px);
+    transition: transform 0.5s ease-in;
+    
+}
+
+ h2{
+    color: #ea962e;
+    margin: 20px;
+}
+
+
+img {
+    border-radius: 10px;
+    width: max-content;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #02024e;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label {
+    margin-left: -250px;
+}
+
+input[placeholder="DDMMYYYY"] {
+    width: 38%;
+    margin-right: 15px;
+}
+
+input[placeholder="###"] {
+    width: 38%;
+}
+
+label[for="card-date"] {
+    font-size: 18px; 
+    margin-left: -30px;
+}
+
+label[for="card-cvv"] {
+    font-size: 18px; 
+    margin-left: 60px;
+}
+
+input[id="remember"] {
+    margin-left: -35%;
+    
+}
+
+label[for="remember"] {
+    font-size: 12px; 
+    margin-left: -190px;
+}
+
+:is(label[for="remember"], input[id="remember"]):focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+button {
+    margin: 20px 0;
+    padding: 18px 40%;
+    border: none;
+    border-radius: 10px;
+    background-color: #ea962e;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: #ea962e;
+}
+
+button:active {
+    background-color: #ea962e;
+    color: #000;
+}

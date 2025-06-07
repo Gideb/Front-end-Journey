@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #c203a6;
+    background-image: url(bg.jpeg);
+    background-position: center;
+    background-size: contain;
+}
+
+.container {
+    background-color: #290655;
+    border-radius: 25px;
+    color: white;
+    margin: 10px 100px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    box-shadow: 10px 10px 20px #2c2b2b;
+}
+
+h2 {
+    margin-bottom: 70px;
+    line-height: 40px;
+    padding-right: 200px;
+}
+h2 span {
+    color: #c203a6;
+}
+
+.address {
+    margin-bottom: 70px;
+}
+
+.fa-solid {
+    margin: 20px 5px;
+    color: #c203a6;
+    font-size: 12px;
+}
+
+.tel {
+    border: 1px solid #c203a6;
+    border-radius: 9px;
+    width: 45%;
+    height: auto;
+    background-color: #5f0151;
+    padding: 0 5px;
+    margin-top: 8px;
+    margin-bottom: -20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+a:hover {
+    color: #c203a6;
+}
+
+a:focus {
+    outline: none;
+    color: #c203a6;
+}
+
+.fa-brands {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.fa-brands:hover {
+    color: #fff;
+    background-color: #9a0283;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    background-color: #9a0283;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* right pane */
+
+.right-side {
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    padding: 30px 40px;
+    margin: 0 20px;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+.buttons > button{
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+    color: #a8a7a7;
+    cursor: pointer;
+}
+
+.buttons > button:hover {
+    background-color: #c203a6;
+    color: white;
+}
+
+.buttons {
+    margin: 20px 10px;
+}
+
+.btn {
+    background-color: #c203a6;
+    color: #a8a7a7;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 85%;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #9a0283;
+}
+
+.plane > button{
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #c203a6;
+    font-size: 11px;
+    padding: 12px 45px;
+    cursor: pointer;
+    margin-top: 90px;
+}
+
+.plane > button:hover {
+    background: #a8a7a7;
+    color: #c203a6;
+}
+
+button:focus {
+    outline: none;
+    background-color: #290655;
+    color: white;
+}
+
+.fa-paper-plane {
+    color: white;
+    position: relative;
+    left: 30px;
+}
