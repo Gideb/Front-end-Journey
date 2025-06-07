@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="job application form designed with instructions from freeCodeCamp frontend development course. added a little for beauty to it">
+    <meta name="author" content="Gideb Designs">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form action="">
+            <label for="name">Full Name</label> <br>
+            <input type="text" id="name" required autofocus autofill placeholder="John Doe">
+<br>
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" required autofocus autofill placeholder="example@email.com">
+<br>
+            
+            <label for="position">Available Positions</label> <br> <br>
+            <select name="position" id="position" >
+                <option value="options">Select an Option</option>
+                <option value="frontEnd">Front-End Engineer</option>
+                <option value="backEnd">Back-End Engineer</option>
+                <option value="uiux">UI/UX Engineer</option>
+                <option value="database">DataBase Manager</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+            <br>
+
+            <fieldset class="radio-group">
+                <legend>Work Availability</legend>
+
+                <input type="radio" id="fulltime" name="availability">
+                <label for="fulltime" name=
+                "availability">Full-Time</label>
+
+                <input type="radio" id="parttime" name="availability">
+                <label for="parttime" name=
+                "availability">Part-Time</label>
+
+                <input type="radio" id="remote" name="availability">
+                <label for="remote" name=
+                "availability">Remote</label>
+<br>
+                <input type="radio" id="hybrid" name="availability">
+                <label for="hybrid" name=
+                "availability">Hybrid</label>
+                
+            </fieldset>
+
+            <textarea name="message" id="message" class="message" rows="7" cols="70" placeholder="Write a message"></textarea>
+<br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

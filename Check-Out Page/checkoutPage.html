@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="checkoout Page designed with instructions from freeCodeCamp frontend course. added a little for beauty to it">
+    <meta name="author" content="Gideb Designs">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CHECKOUT</h1>
+            <br>
+            <section id="cart">
+                
+                <h2>Items in your cart: </h2>
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1603787081207-362bcef7c144?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        width="200" height="200" alt="Airforce One High Top">
+                    <figcaption>Blue Black Airforce One High</figcaption>
+                </figure>
+            </section>
+        </header>
+
+        <br>
+
+        <main>
+            <section id="payment-info">
+                <h2>Payment Information</h2>
+                <p>We accept all major credit cards.</p>
+                <br>
+                <form action="" method="POST">
+    
+                    <br>
+
+                    <label for="card-name">Name on Card</label> <br>
+                    <input aria-required="true" type="text" id="card-name" name="card-name" required>
+                    <br><br>
+
+                    <label for="card-number">Card Number</label><br>
+                    <input aria-required="true" type="number" id="card-number" name="card-number" required
+                        placeholder="XXXX XXXX XXXX XXXX" maxlength="16">
+                    <br><br>
+
+                    <label for="card-date">Expiration date</label>
+
+                    <label for="card-cvv">Security Code </label>
+                    <br>
+
+                    <input aria-required="true" type="number" id="card-date" name="card-date" required maxlength="8"
+                        placeholder="DDMMYYYY">
+
+                    <input aria-required="true" type="number" id="card-cvv" name="card-cvv" required maxlength="3"
+                        placeholder="###">
+                    <br><br>
+
+                    <input type="checkbox" id="remember" checked>
+                    <label for="remember">Remember card details</label>
+
+                    <button type="        button">PAY </button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+
+
+
+</body>
+
+</html>

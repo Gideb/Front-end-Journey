@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Apartment Leasing Page">
+    <meta name="author" content="Gideb Designs">
+    <meta name="description" content="Apartment Leasing Page showcasing various apartments. This was creatd with only HTML5 and CSS">
+    <title>Apartment Leasing Page</title>
+    <link rel="stylesheet" href="./css/apartment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+            <div class="name">
+                <span>HOMIRX</span>
+                <p>LAND SOLUTIONS</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Home</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Home 2</a>
+                        <a href="#">Home 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#properties">Properties</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Properties 2</a>
+                        <a href="#">Properties 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#agents">Agents</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Agents 2</a>
+                        <a href="#">Agents 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#pages">Pages</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#News">News</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Weekly News</a>
+                        <a href="#">Blog Post</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-search"></i>
+            <button class="add-prop" type="button">Add Properties</button>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Find Section -->
+        <div class="find">
+            <h2>Let's Find Your Dream House.</h2>
+            <div class="table">
+                <button>General</button>
+                <button class="orange">Visit</button>
+                <button>Apartment</button>
+
+                <div class="search-table">
+                    <div class="line">
+                        <h5>Keyword</h5>
+                        <p>Looking For?</p>
+                    </div>
+
+                    <div class="line">
+                        <label for="category">Category</label> <br>
+                        <select name="category" id="category">
+                            <option value="select">Select Category</option>
+                        </select>
+                    </div>
+
+                    <div class="line">
+                        <label for="location">Location</label> <br>
+                        <select name="location" id="location">
+                            <option value="select">Location</option>
+                        </select>
+                    </div>
+
+                    <p>More</p>
+                    <button class="orange search-btn">Search</button>
+                </div>
+            </div>
+
+            <button type="button" class="commercial-btn">Commercial</button>
+            <button type="button" class="commercial-btn">Villas</button>
+            <button type="button" class="commercial-btn">Sales</button>
+        </div>
+
+        <!-- Apartment Types Section -->
+        <div class="apartment-types">
+            <h6>Property By Requirement</h6>
+            <h4>Explore Apartment Types</h4>
+            <div class="types">
+                <div class="grid">
+                    <img src="https://img.freepik.com/free-photo/view-building-with-cartoon-style-architecture_23-2151154904.jpg?t=st=1746660502~exp=1746664102~hmac=107a2682f316bfb5efdf66efacac34f262295577a9463bc55a0992721eedd6f9&w=740"
+                        alt="">
+                    <h5>Commercial</h5>
+                    <p>6 Properties</p>
+                </div>
+
+                <div class="grid">
+                    <img src="https://img.freepik.com/free-photo/view-building-with-cartoon-style-architecture_23-2151154901.jpg?t=st=1746660889~exp=1746664489~hmac=0a44b22c4187b77f04cd8cf0f15123b1e9ece80079da00409a39e7406c90088e&w=826"
+                        alt="">
+                    <h5>Warehouse</h5>
+                    <p>6 Properties</p>
+                </div>
+
+                <div class="grid">
+                    <img src="https://img.freepik.com/free-photo/view-building-with-cartoon-style-architecture_23-2151154922.jpg?t=st=1746660419~exp=1746664019~hmac=4118118bc91163c6e04e3d9183857ef9366e16f49374951702b5a5cdee6776c0&w=740"
+                        alt="">
+                    <h5>Villa</h5>
+                    <p>6 Properties</p>
+                </div>
+
+                <div class="grid">
+                    <img src="https://img.freepik.com/premium-photo/isometric-building-white-background_960396-763760.jpg?w=996"
+                        alt="">
+                    <h5>Apartment</h5>
+                    <p>6 Properties</p>
+                </div>
+
+                <div class="grid">
+                    <img src="https://img.freepik.com/free-photo/view-3d-house-model_23-2150761034.jpg?t=st=1746660695~exp=1746664295~hmac=25bbde9c15948ec19ce3a2facf89c8074895acf5d67762b0e8910da2d8ab9ec9&w=996"
+                        alt="">
+                    <h5>Homestay</h5>
+                    <p>6 Properties</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Listing Section -->
+        <div class="listing">
+            <h5>Our Listing</h5>
+            <h2>Find Home Listing In Your Area</h2>
+            <div class="options">
+                <button id="apartbtn">Apartment</button>
+                <button id="genbtn">General</button>
+                <button id="villabtn">Villa</button>
+            </div>
+
+            <div class="lists">
+                <div class="list">
+                    <img class="list-pic"
+                        src="https://plus.unsplash.com/premium_photo-1661954372617-15780178eb2e?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image 1">
+                    <img class="icon"
+                        src="https://avatars.githubusercontent.com/u/110176493?s=400&u=2e8387f2dc79e4a3aa814c33ce5b53da6a1466d8&v=4"
+                        alt="me" width="20">
+                    <div class="list-info">
+                        <i>⭐⭐⭐⭐⭐</i>
+                        <h6>Elevation Small Apartments</h6>
+                        <p>Location</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe</p>
+                        <span class="sqft">1,443 Sqrft</span>
+                        <span class="bed">Bed 5</span>
+                        <span class="bath">Bath 2</span>
+                        <div class="price">$299.00
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <img class="list-pic"
+                        src="https://images.unsplash.com/photo-1717167398817-121e3c283dbb?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image 1">
+                    <img class="icon"
+                        src="https://avatars.githubusercontent.com/u/110176493?s=400&u=2e8387f2dc79e4a3aa814c33ce5b53da6a1466d8&v=4"
+                        alt="me" width="20">
+                    <div class="list-info">
+                        <i>⭐⭐⭐⭐⭐</i>
+                        <h6>Elevation Small Apartments</h6>
+                        <p>Location</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe</p>
+                        <span class="sqft">1,443 Sqrft</span>
+                        <span class="bed">Bed 5</span>
+                        <span class="bath">Bath 2</span>
+                        <div class="price">$299.00
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <img class="list-pic"
+                        src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image 2">
+                    <img class="icon"
+                        src="https://avatars.githubusercontent.com/u/110176493?s=400&u=2e8387f2dc79e4a3aa814c33ce5b53da6a1466d8&v=4"
+                        alt="me">
+                    <div class="list-info">
+                        <i>⭐⭐⭐⭐⭐</i>
+                        <h6>Elevation Small Apartments</h6>
+                        <p>Location</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe</p>
+                        <span class="sqft">1,443 Sqrft</span>
+                        <span class="bed">Bed 5</span>
+                        <span class="bath">Bath 2</span>
+                        <div class="price">$299.00
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <h6>Our Property List</h6>
+        <h4>Our Top Location For Your Property</h4>
+        <p>7 Properties</p>
+        <h3>California</h3>
+        <p>Luxury Properties with Conveniences</p>
+    </footer>
+</body>
+
+</html>

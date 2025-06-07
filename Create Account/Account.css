@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins", sans-serif;
+}
+
+body {
+	background-color: #d7f4ff;
+	font-size: 12px;
+}
+
+.container {
+	background-color: white;
+	margin: 23px 180px;
+	padding: 15px;
+	box-shadow: 5px 10px 10px #ccc;
+	border-radius: 15px;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.left-side {
+	background-color: #e8fffe;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+img {
+	width: 70px;
+	height: auto;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 17px;
+	margin-bottom: 30px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+    cursor: pointer;
+}
+
+.fa-solid {
+	padding: 8px;
+	background-color: #dfdfdf;
+	border-radius: 50%;
+	font-size: 8px;
+	color: #7c7b7b;
+}
+
+h3 {
+	font-size: 12px;
+	color: #7c7b7b;
+}
+
+.fa-1 + h3,
+h3:hover,
+h3:focus {
+    color: rgb(2, 2, 2);
+}
+
+.line {
+	border-left: 2px solid #ccc;
+	padding: 12px;
+	margin: 5px 0 5px 9px;
+}
+
+
+.right-side {
+    background: linear-gradient(to left, #f9f9f9, #fff);
+	border-radius: 10px;
+	padding: 30px;
+}
+
+
+
+fieldset {
+    width: 32px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #62a897;
+    background-color: none;
+}
+
+fieldset > legend {
+    color: #62a897;
+    font-weight: normal;
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+fieldset > input {
+    background: linear-gradient(to right, #fff, #fff);
+    margin-top: 0;
+    padding: 8px;
+    position: relative;
+    top: -10px;
+    left: 4px;
+    border: none;
+}
+
+fieldset > input:focus,
+fieldset > input:hover,
+fieldset > input:active {
+    outline: none;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 8px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin: 5px 10px;
+    margin-left: 0;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-size: 10px;
+}
+
+input[placeholder="Post Code"] {
+    width: 13%;
+}
+
+input[placeholder="City"] {
+    width: 20%;
+}
+
+input[placeholder="Country"] {
+    width: 21%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus,
+input:hover,
+input:active,
+#countryCode {
+    outline: 1px solid #c1f3f8;
+    background-color: #f8f6f6;
+}
+
+#countryCode {
+    padding: 7px 0;
+    color: #ccc;
+    border: 1px solid #eee;
+    width: 15%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 25px;
+    background-color: #057d71;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    position: relative;
+    left: 80%;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px #7c7b7b;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: #d7d7d7;
+    color: #057d71;
+    outline: none;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
+}
