@@ -1,0 +1,22 @@
+.container {
+    text-align: center;
+    font-family: "inter", sans-serif;
+}
+
+h1 {
+    background-color: wheat;
+}
+
+p {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+textarea {
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
